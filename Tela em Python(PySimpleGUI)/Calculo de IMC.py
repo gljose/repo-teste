@@ -20,5 +20,5 @@ while True:
         peso = float(valores['weight'].replace(',','.'))
         alt = float(valores['height'].replace(',','.'))
         imc = peso / (alt*alt)
-        sg.popup(valores['name'],'seu IMC é de: ', imc)
-       
+        sg.popup(valores['name'],'seu IMC é de: ',round(imc,2) , 'kg/m2')
+    
